@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariyo Seno - Portfolio & Professional Profile</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            900: '#312e81',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-wider text-white flex items-center gap-2">
+                <span class="text-brand-500">&lt;</span>ARIYO SENO<span class="text-brand-500">&gt;</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-brand-500 transition-colors">Tentang Saya</a>
+                <a href="#skills" class="hover:text-brand-500 transition-colors">Keahlian</a>
+                <a href="#projects" class="hover:text-brand-500 transition-colors">Pengalaman &amp; Proyek</a>
+                <a href="#contact" class="hover:text-brand-500 transition-colors">Kontak</a>
+            </nav>
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-brand-600 hover:bg-brand-700 rounded-lg transition-all shadow-lg shadow-brand-500/20">
+                Hubungi Saya
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="min-h-screen pt-32 pb-16 flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-slate-900 to-slate-950 border-b border-slate-900">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(99,102,241,0.15),rgba(255,255,255,0))]"></div>
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="space-y-6 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-semibold uppercase tracking-wider">
+                    <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span> Sistem Informasi • IPK 3.91/4.00
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                    Halo, Saya <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-indigo-300">Ariyo Seno</span>
+                </h1>
+                <p class="text-slate-400 text-lg max-w-xl mx-auto md:mx-0 leading-relaxed">
+                    Mahasiswa S1 Sistem Informasi Universitas Gunadarma semester 5. Berpengalaman dalam kepemimpinan organisasi, manajemen proyek acara kampus, serta memiliki pemahaman teknis jaringan dan dasar pemrograman.
+                </p>
+                <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-4">
+                    <a href="#projects" class="px-6 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-medium transition-all shadow-lg shadow-brand-600/30 flex items-center gap-2">
+                        <span>Lihat Portfolio</span>
+                        <i class="fa-solid fa-arrow-down text-xs"></i>
+                    </a>
+                    <a href="#contact" class="px-6 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 font-medium transition-all">
+                        Kontak Saya
+                    </a>
+                </div>
+            </div>
+            
+            <!-- FOTO 1: PROFIL -->
+            <div class="flex justify-center">
+                <div class="relative w-64 h-80 sm:w-80 sm:h-96 rounded-3xl overflow-hidden border-2 border-slate-800 shadow-2xl bg-slate-900 group">
+                    <img src="WhatsApp Image 2026-10-14 at 20.34.43.jpeg" alt="Foto Profil Ariyo Seno" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="py-24 bg-slate-950">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Tentang Saya</h2>
+                <div class="w-12 h-1 bg-brand-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                <!-- Academic Card -->
+                <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-8 space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 flex items-center justify-center text-brand-400 text-xl mb-4">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">Pendidikan</h3>
+                    <div class="space-y-4 text-slate-300">
+                        <div>
+                            <h4 class="font-semibold text-white">S1 Sistem Informasi — Universitas Gunadarma</h4>
+                            <p class="text-xs text-brand-400 font-medium">2024 – Sekarang | Semester 5 (IPK: 3.91 / 4.00)</p>
+                            <ul class="list-disc list-inside text-sm text-slate-400 mt-2 space-y-1">
+                                <li>Aktif praktikum Laboratorium Networking dari tingkat 1 hingga sekarang.</li>
+                                <li>Anggota Himpunan Mahasiswa Sistem Informasi (HIMSI) Universitas Gunadarma.</li>
+                            </ul>
+                        </div>
+                        <div class="pt-2 border-t border-slate-800">
+                            <h4 class="font-semibold text-white">SMA 11 Yadika Jatirangga</h4>
+                            <p class="text-xs text-brand-400 font-medium">Lulus 2024</p>
+                            <p class="text-sm text-slate-400 mt-1">Peringkat 9 Paralel (Siswa Eligible SNBP) &amp; konsisten Peringkat 5 Besar Kelas selama 6 semester.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profile Summary Card -->
+                <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-8 space-y-4 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-500/10 flex items-center justify-center text-brand-400 text-xl mb-4">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Ringkasan Profil</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mt-4">
+                            Terbiasa mengelola tim, bernegosiasi dengan pihak eksternal, dan memiliki dedikasi tinggi untuk berkontribusi dalam akademik serta pembimbingan mahasiswa sebagai Asisten Laboratorium.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 pt-6 border-t border-slate-800">
+                        <div class="bg-slate-950 p-4 rounded-xl text-center border border-slate-800">
+                            <span class="block text-2xl font-bold text-brand-400">3.91</span>
+                            <span class="text-xs text-slate-400">IPK Kumulatif</span>
+                        </div>
+                        <div class="bg-slate-950 p-4 rounded-xl text-center border border-slate-800">
+                            <span class="block text-2xl font-bold text-brand-400">Sem 5</span>
+                            <span class="text-xs text-slate-400">Sistem Informasi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-24 bg-slate-900/40 border-t border-b border-slate-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Keterampilan &amp; Keahlian</h2>
+                <div class="w-12 h-1 bg-brand-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid sm:grid-cols-3 gap-6">
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 space-y-3">
+                    <div class="text-brand-400 text-2xl"><i class="fa-solid fa-code"></i></div>
+                    <h4 class="text-white font-semibold text-lg">Hard Skills</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Microsoft Excel &amp; Word, Mengetik Cepat, Dasar-dasar Networking (Cisco).
+                    </p>
+                </div>
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 space-y-3">
+                    <div class="text-brand-400 text-2xl"><i class="fa-solid fa-users"></i></div>
+                    <h4 class="text-white font-semibold text-lg">Soft Skills</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Komunikasi Efektif, Manajemen Tim, Adaptabilitas.
+                    </p>
+                </div>
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 space-y-3">
+                    <div class="text-brand-400 text-2xl"><i class="fa-solid fa-language"></i></div>
+                    <h4 class="text-white font-semibold text-lg">Bahasa</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Bahasa Indonesia (Native), Bahasa Inggris (Dasar).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED PROJECTS & EXPERIENCES -->
+    <section id="projects" class="py-24 bg-slate-950">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Pengalaman &amp; Proyek</h2>
+                <div class="w-12 h-1 bg-brand-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- PROYEK 1: SI TALKS BY HIMSI (SERTIFIKAT KETUPLAK) -->
+                <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-brand-500/40 transition-all">
+                    <div>
+                        <!-- Hanya 1 Gambar Sertifikat Ketuplak -->
+                        <div class="h-56 bg-slate-800 overflow-hidden border-b border-slate-800">
+                            <img src="sertifikat .png" alt="Sertifikat Ketuplak SI Talks" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <span class="px-3 py-1 rounded-full text-xs font-medium bg-brand-500/10 text-brand-400 border border-brand-500/20">HIMSI Gunadarma</span>
+                            <h3 class="text-xl font-bold text-white">Ketua Pelaksana SI Talks by HIMSI</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Memimpin dan mengoordinasikan seluruh panitia dalam penyelenggaraan seminar "Crafting Portfolio with QA &amp; Gemini AI" oleh HIMSI Universitas Gunadarma.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 bg-slate-900/90 border-t border-slate-800 text-xs text-slate-400 flex items-center gap-2">
+                        <i class="fa-solid fa-tag text-brand-500"></i> Leadership, Event Management, Public Speaking
+                    </div>
+                </div>
+
+                <!-- PROYEK 2: KOORDINATOR BUKU TAHUNAN -->
+                <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-brand-500/40 transition-all">
+                    <div>
+                        <div class="h-56 bg-slate-800 overflow-hidden border-b border-slate-800">
+                            <img src="WhatsApp Image 2026-10-14 at 12.12.58.jpeg" alt="Bukti Buku Tahunan Sekolah" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <span class="px-3 py-1 rounded-full text-xs font-medium bg-brand-500/10 text-brand-400 border border-brand-500/20">SMA 11 Yadika Jatirangga</span>
+                            <h3 class="text-xl font-bold text-white">Ketua Koordinator Pelaksana Buku Tahunan</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Menjadi penanggung jawab utama dalam negosiasi dengan vendor eksternal dan sinkronisasi kebutuhan pihak sekolah.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 bg-slate-900/90 border-t border-slate-800 text-xs text-slate-400 flex items-center gap-2">
+                        <i class="fa-solid fa-tag text-brand-500"></i> Negosiasi Vendor, Management Tim, Operational
+                    </div>
+                </div>
+
+                <!-- PROYEK 3: KOMDIS PKKMB -->
+                <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-brand-500/40 transition-all">
+                    <div>
+                        <div class="h-56 bg-slate-800 overflow-hidden border-b border-slate-800">
+                            <img src="WhatsApp Image 2026-10-14 at 11.46.43.jpeg" alt="Foto Komdis PKKMB" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <span class="px-3 py-1 rounded-full text-xs font-medium bg-brand-500/10 text-brand-400 border border-brand-500/20">Universitas Gunadarma</span>
+                            <h3 class="text-xl font-bold text-white">Anggota Divisi Komisi Disiplin PKKMB</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Mengawasi dan menjaga ketertiban mahasiswa baru selama rangkaian acara PKKMB Universitas Gunadarma.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 bg-slate-900/90 border-t border-slate-800 text-xs text-slate-400 flex items-center gap-2">
+                        <i class="fa-solid fa-tag text-brand-500"></i> Kedisiplinan, Pengawasan, Koordinasi Lapangan
+                    </div>
+                </div>
+
+                <!-- PROYEK 4: BOOTCAMP FILING FIKTI -->
+                <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-brand-500/40 transition-all">
+                    <div>
+                        <div class="h-56 bg-slate-800 overflow-hidden border-b border-slate-800">
+                            <img src="bootcamp_filing_page-0001.jpg" alt="Sertifikat Bootcamp Filing FIKTI" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <span class="px-3 py-1 rounded-full text-xs font-medium bg-brand-500/10 text-brand-400 border border-brand-500/20">BEM FIKTI Gunadarma</span>
+                            <h3 class="text-xl font-bold text-white">Bootcamp Filing &amp; Data Management</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Mengikuti pelatihan Data Science "Exploring the Data Universe" dan meraih Predikat A dengan total nilai 96.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 bg-slate-900/90 border-t border-slate-800 text-xs text-slate-400 flex items-center gap-2">
+                        <i class="fa-solid fa-tag text-brand-500"></i> Data Science, Data Visualization, Predikat A
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / CONTACT SECTION -->
+    <footer id="contact" class="bg-slate-900 border-t border-slate-800 py-16">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-4">
+                <h2 class="text-2xl font-bold text-white">Kontak &amp; Informasi</h2>
+                <p class="text-slate-400 text-sm leading-relaxed max-w-md">
+                    Terbuka untuk kolaborasi akademik, organisasi, serta peluang kerja sama di bidang Sistem Informasi dan Teknologi.
+                </p>
+                <div class="flex items-center gap-4 pt-2">
+                    <a href="mailto:senoariyo7@gmail.com" class="w-10 h-10 rounded-lg bg-slate-800 hover:bg-brand-600 text-slate-300 hover:text-white flex items-center justify-center transition-all">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/ariyoseno" target="_blank" class="w-10 h-10 rounded-lg bg-slate-800 hover:bg-brand-600 text-slate-300 hover:text-white flex items-center justify-center transition-all">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800/80 space-y-4">
+                <div class="flex items-center gap-3 text-slate-300 text-sm">
+                    <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-400 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <span class="block text-xs text-slate-500">Lokasi</span>
+                        <span>Kota Bekasi, Jawa Barat</span>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 text-slate-300 text-sm">
+                    <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-400 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <span class="block text-xs text-slate-500">Telepon / WhatsApp</span>
+                        <span>+62 816-1767-7500</span>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 text-slate-300 text-sm">
+                    <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-400 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <span class="block text-xs text-slate-500">Email</span>
+                        <span>senoariyo7@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-6 mt-12 pt-6 border-t border-slate-800/60 text-center text-xs text-slate-500">
+            &copy; 2026 Ariyo Seno. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
